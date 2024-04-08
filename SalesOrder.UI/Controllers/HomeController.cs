@@ -28,12 +28,11 @@ namespace SalesOrder.UI.Controllers
                 return View("Index");
             }
 
-            // Create a stream from the uploaded file content
+      
             using (var stream = file.OpenReadStream())
             {
                 var content = new StreamContent(stream);
 
-                // Send the file content to the API endpoint
                 var response = await _httpClient.PostAsync("/api/SalesOrder/Convert", content);
                 if (response.IsSuccessStatusCode)
                 {
