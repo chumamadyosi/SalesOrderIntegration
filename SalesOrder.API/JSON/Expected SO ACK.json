@@ -1,0 +1,22 @@
+﻿{
+  "orderAcknowledgement": {
+    "orderRef": "TestSO123",
+    "internalRef": "ACK-001",
+    "status": "RECEIVED",
+    "receivedDate": "2023/11/29",
+    "receivedItems": [
+      {
+        "stockCode": "TestSKU1",
+        "qtyReceived": 1
+      },
+      {
+        "stockCode": "TestSKU2",
+        "qtyReceived": 4
+      },
+      {
+        "stockCode": "TestSKU3",
+        "qtyReceived": 8
+      }
+    ]
+  }
+}
